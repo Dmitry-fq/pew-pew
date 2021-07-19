@@ -1,0 +1,67 @@
+body {
+    background: dimgrey;
+}
+
+td {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+
+}
+
+#game {
+    margin: 2% auto 0;
+}
+
+.ship-body {
+    background-color: gold;
+}
+
+.enemy-body {
+    background-color: white;
+}
+
+.bullet {
+    background-color: mediumvioletred;
+}
+
+.destroying-ship {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid gold;
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu a:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
